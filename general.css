@@ -1,6 +1,6 @@
 body {
     color: rgb(200, 200, 200);
-    background-image: url(back.jpg);
+    background-image: url(img/back.jpg);
     background-attachment: fixed;
     background-size:cover;
 }
