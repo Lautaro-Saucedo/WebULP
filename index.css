@@ -1,54 +1,12 @@
-body {
-    color: rgb(200, 200, 200);
-    background-image: url(back.jpg);
-    background-attachment: fixed;
-    background-size:cover;
-}
-
-#topnav {
-    background-color:rgb(25, 25, 25);
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.sticky {
-    position: fixed;
-    top:0;
-    width: 100%;
-}
-
-#topnav a.active {
-    background-color: rgb(200, 200, 200);
-    color:black;
-}
-
-#topnav a{
-    color: rgb(200, 200, 200);
-    float: left;
-    text-align: center;
-    padding: 14px 100px;
-    text-decoration: none;
-    font-size: 17px;
-    border-color: grey;
-    border-style: solid;
-    border-width: 0px 1px;
-}
-
-#topnav img {
-    float: left;
-    height: 48px;
-    margin:0px 40px;
-}
-
-#topnav a:hover {
-    background-color: rgb(200, 200, 200);
-    color: black;
-}
-
 .container1 {
     width: 500px;
     background-color:rgba(25, 25, 25, 0.5);
     margin-left: 40px;
+}
+
+.container1 p {
+    padding: 20px 20px;
+    line-height: 125%;
 }
 
 .container2 {
@@ -59,11 +17,6 @@ body {
     overflow-y:scroll;
 }
 
-.container1 p {
-    padding: 20px 20px;
-    line-height: 125%;
-}
-
 .container2 p {
     padding:5px 20px;
 }
@@ -71,6 +24,7 @@ body {
 div.container1, div.container2 {
     float:left;
 }
+
 .center {
     display: block;
     margin-left: auto;
