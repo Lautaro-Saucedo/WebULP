@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="general.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="general.js"></script>
     <title>Abominacion Informatica</title>
 </head>
 <body>
@@ -79,13 +80,19 @@
     </div>
     
     <script>
+        //-------------------------------
         var  stick = topnav.offsetTop;
+
         window.onscroll = function(){sticky(stick)};
+        //-------------------------------
         var caj1 = document.querySelectorAll(".container3 div.caja");
         var caj2 = document.getElementsByClassName("container3")[0];
+
         cajita(caj1,caj2);
-        setInterval(function(){cajita(caj1,caj2)},1000);
+        setInterval(function(){cajita(caj1,caj2)},6000);
+        //------------------------------
         var lab2 = document.querySelectorAll("div.container4 p");
+        
         refresh(lab2);
         document.addEventListener("keydown", function(event){
             mover(event.keyCode);

@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hepatitis Computacional</title>
     <link rel="stylesheet" href="../general.css">
+    <script type="text/javascript" src="../general.js"></script>    
 </head>
 <body>
     <div id="topnav">
-        <img src="../img/laucha.png" alt="ratamburguesa" title="Ratamburguesa">
+        <img src="../img/laucha.webp" alt="ratamburguesa" title="Ratamburguesa">
         <a href="../index.html">Home</a>
         <a href="" class="active">Pagina 2</a>
         <a href="../dp/Tabla Densidad Poblacional.html">Densidad Poblacional</a>
@@ -69,16 +70,7 @@
     </div>
     <script>       
         var  stick = topnav.offsetTop;
-    
-        function sticky (){
-            if (window.pageYOffset>=stick){
-                topnav.classList.add("sticky");
-            } else {
-                topnav.classList.remove("sticky");
-            }
-        }
-    
-        window.onscroll = function(){sticky()};
+        window.onscroll = function(){sticky(stick)};
     </script>
 </body>
 </html>

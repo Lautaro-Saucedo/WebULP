@@ -1,13 +1,3 @@
-function sticky (stick){
-    if (window.pageYOffset>=stick){
-        topnav.classList.add("sticky");
-    } else {
-        topnav.classList.remove("sticky");
-    }
-}
-
-//-------------------------------------------------------------------
-
 function cajita(caj1, caj2){
     caj2.innerHTML="";
     k=caj1[Math.floor(Math.random()*3)];
