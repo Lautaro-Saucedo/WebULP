@@ -1,7 +1,11 @@
+#cont {
+    background-color:rgba(25, 25, 25, 0.5);
+    margin: 20px;
+}
+
 .container1 {
     width: 500px;
-    background-color:rgba(25, 25, 25, 0.5);
-    margin-left: 40px;
+    
 }
 
 .container1 p {
@@ -9,19 +13,36 @@
     line-height: 125%;
 }
 
-.container2 {
+.container3 {
     width:300px;
     height:400px;
-    background-color:rgba(25, 25, 25, 0.5);
-    margin-left: 40px;
-    overflow-y:scroll;
+    overflow-y:hidden;
 }
 
-.container2 p {
+
+.container3 p {
     padding:5px 20px;
 }
 
-div.container1, div.container2 {
+.container4 p {
+    padding: 0px 5px;
+    text-align: justify;
+    letter-spacing: 5px;
+    margin: 0px;
+    border-left: 2px solid blue;
+    border-right: 2px solid blue;
+}
+p#top{
+    padding-top:5px;
+    border-top: 2px solid blue;
+}
+p#bot{
+    padding-bottom:5px;
+    border-bottom: 2px solid blue;
+}
+
+
+.container1, .container2{
     float:left;
 }
 
