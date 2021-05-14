@@ -5,11 +5,12 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="general.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="index.js"></script>
     <title>Abominacion Informatica</title>
 </head>
 <body>
     <div id="topnav">
-        <img src="img/laucha.png" alt="ratamburguesa" title="Ratamburguesa">
+        <img src="img/laucha.webp" height="50px" width="100px" alt="ratamburguesa" title="Ratamburguesa">
         <a href="" class="active">Home</a>
         <a href="p2/pag2.html">Pagina 2</a>
         <a href="dp/Tabla Densidad Poblacional.html">Densidad Poblacional</a>
@@ -28,19 +29,19 @@
             potenti ultricies litora justo cursus mollis vestibulum cum tempor sagittis cubilia, ullamcorper praesent vivamus quam cras 
             nisi curae montes ridiculus facilisis natoque.</p> 
             <p>Convallis nullam per felis auctor risus consequat ad etiam donec interdum imperdiet molestie, fames facilisi nunc litora blandit 
-                iaculis tempor placerat in tellus porta. Cum tristique tempus curabitur sodales semper lacus id lacinia enim in, ac litora justo 
-                lobortis vitae natoque est sociosqu conubia cursus, mollis praesent ridiculus potenti congue magnis torquent tincidunt neque. 
-                Rutrum lacus molestie mollis ridiculus nec a risus donec potenti, parturient eros morbi aenean nisl ad eleifend sapien dapibus, 
-                elementum lectus in dis erat nisi nascetur congue.</p>
+            iaculis tempor placerat in tellus porta. Cum tristique tempus curabitur sodales semper lacus id lacinia enim in, ac litora justo 
+            lobortis vitae natoque est sociosqu conubia cursus, mollis praesent ridiculus potenti congue magnis torquent tincidunt neque. 
+            Rutrum lacus molestie mollis ridiculus nec a risus donec potenti, parturient eros morbi aenean nisl ad eleifend sapien dapibus, 
+            elementum lectus in dis erat nisi nascetur congue.</p>
             <p>Vulputate sollicitudin nisl class blandit eros ut dictumst odio mauris nibh, ultrices libero risus ligula aliquet iaculis cubilia
-                 massa habitasse, et orci potenti aenean consequat malesuada integer taciti natoque. Vulputate sollicitudin interdum dictumst 
-                 vehicula porta cras parturient urna phasellus, turpis venenatis libero habitant convallis consequat tellus tortor malesuada, 
-                 penatibus luctus per laoreet neque magna metus rutrum. Fames ligula nisl posuere imperdiet mi ornare tellus placerat, erat eros 
-                 sodales tristique parturient arcu integer, scelerisque suscipit taciti faucibus dapibus sagittis hac.</p>
+             massa habitasse, et orci potenti aenean consequat malesuada integer taciti natoque. Vulputate sollicitudin interdum dictumst 
+            vehicula porta cras parturient urna phasellus, turpis venenatis libero habitant convallis consequat tellus tortor malesuada, 
+            penatibus luctus per laoreet neque magna metus rutrum. Fames ligula nisl posuere imperdiet mi ornare tellus placerat, erat eros 
+            sodales tristique parturient arcu integer, scelerisque suscipit taciti faucibus dapibus sagittis hac.</p>
         </div>
         <div class="container2">
             <div class="container4" id="cont">
-                <h2 style="text-align: center;">↓WASD↓</h2>
+                <h2 style="text-align: center;">↓ WASD ↓</h2>
                 <p id="top"></p>
                 <p></p>
                 <p></p>
@@ -49,7 +50,7 @@
             </div>
             <div class="container3" id="cont">
                 <div class="caja">
-                    <img src="img/arthas.jpg" alt="" style="border-radius: 50%;" class="center" >
+                    <img src="img/arthas.webp" width="150px" height="150px" style="border-radius: 50%;" class="center" >
                     <h4 style="text-align: center;">UN PLAN SOLIDO</h4>
                     <p style="text-align: center;">
                         Arthas Menethil, Crown Prince of Lordaeron and Knight of the Silver Hand, was the son of King Terenas 
@@ -57,7 +58,7 @@
                     </p>
                 </div>
                 <div class="caja">
-                    <img src="img/Balnazzar_face.jpg" alt="" style="border-radius: 50%;" class="center" >
+                    <img src="img/balna.webp" width="150px" height="150px" style="border-radius: 50%;" class="center" >
                     <h4 style="text-align: center;">TU VIDA ME DARA FUERZAS</h4>
                     <p style="text-align: center;">
                         Balnazzar (currently under the guise of Saidan Dathrohan, Grand Crusader of the Scarlet Crusade)
@@ -66,7 +67,7 @@
                     </p>
                 </div>
                 <div class="caja">
-                    <img src="img/Archimondeface.jpg" alt="" style="border-radius: 50%;" class="center" >
+                    <img src="img/archi.webp" width="150px" height="150px" style="border-radius: 50%;" class="center" >
                     <h4 style="text-align: center;">ARCHIMONDE NO DICE NADA :(</h4>
                     <p style="text-align: center;">
                         Archimonde (pronounced Ark-i-mond) was the right hand of the fallen titan Sargeras. Archimonde 
@@ -77,125 +78,19 @@
         </div>
     </div>
     
-    <script>       
+    <script>
         var  stick = topnav.offsetTop;
-        var asd = document.querySelectorAll(".container3 div.caja");
-        function sticky (){
-            if (window.pageYOffset>=stick){
-                topnav.classList.add("sticky");
-            } else {
-                topnav.classList.remove("sticky");
-            }
-        }
-
-        function cajita(){
-            document.getElementsByClassName("container3")[0].innerHTML="";
-            k=asd[Math.floor(Math.random()*3)];
-            document.getElementsByClassName("container3")[0].appendChild(k);
-        }
-    
-        window.onscroll = function(){sticky()};
-        cajita();
-        setInterval(cajita,10000);
-        /*
-        esquinas
-        218 = ┌ 191 = ┐    
-        192 = └ 217 = ┘
-        196 = ─
-        179 = │
-        */
-
-        var lab = [
-                "a#############################".split(""),
-                "##############################".split(""),
-                "##############################".split(""),
-                "##############################".split(""),
-                "##############################".split(""),
-            ];
+        window.onscroll = function(){sticky(stick)};
+        var caj1 = document.querySelectorAll(".container3 div.caja");
+        var caj2 = document.getElementsByClassName("container3")[0];
+        cajita(caj1,caj2);
+        setInterval(function(){cajita(caj1,caj2)},1000);
         var lab2 = document.querySelectorAll("div.container4 p");
-
-
-        function gilada(){
-            for (i=0;i<5;i++){
-                lab2[i].innerText="";
-            }
-            for (i=0;i<5;i++){
-                for (k=0;k<30;k++){
-                    lab2[i].innerText+=lab[i][k];
-                }
-            }
-        }
-
-
-        function moverw(){
-            for (i=0;i<5;i++){
-                for (k=0;k<30;k++){
-                    if (lab[i][k] == "a" && i!=0){
-                        lab[i][k]="#";
-                        lab[(i-1)][k]="a";
-                        return;
-                    }
-                }
-            }
-        }
-        function movers(){
-            for (i=0;i<5;i++){
-                for (k=0;k<30;k++){
-                    if (lab[i][k] == "a" && i!=4){
-                        lab[i][k]="#";
-                        lab[(i+1)][k]="a";
-                        return;
-                    }
-                }
-            }
-        }
-        function moverd(){
-            for (i=0;i<5;i++){
-                for (k=0;k<30;k++){
-                    if (lab[i][k] == "a" && k!=29){
-                        lab[i][k]="#";
-                        lab[i][k+1]="a";
-                        return;
-                    }
-                }
-            }
-        }
-        function movera(){
-            for (i=0;i<5;i++){
-                for (k=0;k<30;k++){
-                    if (lab[i][k] == "a" && k!=0){
-                        lab[i][k]="#";
-                        lab[i][k-1]="a";
-                        return;
-                    }
-                }
-            }
-        }
-
-
-        gilada();
+        refresh(lab2);
         document.addEventListener("keydown", function(event){
-            switch(event.keyCode){
-                case 83:{
-                    movers();
-                    break;
-                }
-                case 65:{
-                    movera();
-                    break;
-                }
-                case 68:{
-                    moverd();
-                    break;
-                }
-                case 87:{
-                    moverw();
-                    break;
-                }
-            }
-            gilada();
+            mover(event.keyCode);
+            refresh(lab2);
         });
-
     </script>
 </body>
 </html>

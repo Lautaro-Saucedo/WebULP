@@ -5,7 +5,6 @@
 
 .container1 {
     width: 500px;
-    
 }
 
 .container1 p {
@@ -51,6 +50,4 @@ p#bot{
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
-    width: 150px;
-    height: 150px;
 }
