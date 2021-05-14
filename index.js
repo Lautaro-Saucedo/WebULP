@@ -23,15 +23,19 @@ var lab = [
     "##############################".split(""),
     "##############################".split(""),
 ];
+var x=0;
+var y=0;
 
-function refresh(lab2){
+function limpiar(lab2){
     for (i=0;i<5;i++){
         lab2[i].innerText="";
     }
+}
+
+function refresh(lab2){
+    limpiar(lab2);
     for (i=0;i<5;i++){
-        for (k=0;k<30;k++){
-            lab2[i].innerText+=lab[i][k];
-        }
+        lab2[i].innerText+= lab[i].join("");
     }
 }
 
@@ -57,49 +61,29 @@ function mover(a){
 }
 
 function moverw(){
-    for (i=0;i<5;i++){
-        for (k=0;k<30;k++){
-            if (lab[i][k] == "a" && i!=0){
-                lab[i][k]="#";
-                lab[(i-1)][k]="a";
-                return;
-            }
-        }
+    if (y!=0){
+        lab[y][x]="#";
+        lab[--y][x]="a";
     }
 }
 
 function movers(){
-    for (i=0;i<5;i++){
-        for (k=0;k<30;k++){
-            if (lab[i][k] == "a" && i!=4){
-                lab[i][k]="#";
-                lab[(i+1)][k]="a";
-                return;
-            }
-        }
+    if (y!=4){
+        lab[y][x]="#";
+        lab[++y][x]="a";
     }
 }
 
 function moverd(){
-    for (i=0;i<5;i++){
-        for (k=0;k<30;k++){
-            if (lab[i][k] == "a" && k!=29){
-                lab[i][k]="#";
-                lab[i][k+1]="a";
-                return;
-            }
-        }
+    if (x!=29){
+        lab[y][x]="#";
+        lab[y][++x]="a";
     }
 }
 
 function movera(){
-    for (i=0;i<5;i++){
-        for (k=0;k<30;k++){
-            if (lab[i][k] == "a" && k!=0){
-                lab[i][k]="#";
-                lab[i][k-1]="a";
-                return;
-            }
-        }
+    if (x!=0){
+        lab[y][x]="#";
+        lab[y][--x]="a";
     }
 }
