@@ -41,14 +41,6 @@
             sodales tristique parturient arcu integer, scelerisque suscipit taciti faucibus dapibus sagittis hac.</p>
         </div>
         <div class="container2">
-            <div class="container4" id="cont">
-                <h2 style="text-align: center;">↓ WASD ↓</h2>
-                <p id="top"></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p id="bot"></p>
-            </div>
             <div class="container3" id="cont">
                 <div class="caja">
                     <img src="img/arthas.webp" width="150px" height="150px" style="border-radius: 50%;" class="center" >
@@ -76,6 +68,14 @@
                     </p>
                 </div>
             </div>
+            <div class="container4" id="cont">
+                <h2 style="text-align: center;">↓ WASD ↓</h2>
+                <mapa></mapa>
+                <mapa></mapa>
+                <mapa></mapa>
+                <mapa></mapa>
+                <mapa></mapa>
+            </div>
         </div>
     </div>
     
@@ -91,13 +91,13 @@
         cajita(caj1,caj2);
         setInterval(function(){cajita(caj1,caj2)},6000);
         //------------------------------
-        var lab2 = document.querySelectorAll("div.container4 p");
+        var lab2 = document.querySelectorAll("div.container4 mapa");
+        param(lab2);
         
-        refresh(lab2);
         document.addEventListener("keydown", function(event){
             mover(event.keyCode);
-            refresh(lab2);
         });
+        setInterval(puma,2000);
     </script>
 </body>
 </html>

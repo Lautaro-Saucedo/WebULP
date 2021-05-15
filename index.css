@@ -18,28 +18,21 @@
     overflow-y:hidden;
 }
 
-
 .container3 p {
     padding:5px 20px;
 }
 
-.container4 p {
-    padding: 0px 5px;
-    text-align: justify;
-    letter-spacing: 5px;
-    margin: 0px;
-    border-left: 2px solid blue;
-    border-right: 2px solid blue;
+.container4{
 }
 
-p#top{
-    padding-top:5px;
-    border-top: 2px solid blue;
+.container4 mapa {
+    font-size:20px;
+    display: block;
 }
 
-p#bot{
-    padding-bottom:5px;
-    border-bottom: 2px solid blue;
+mapa p {
+    display:inline;
+    padding:0px 10px;
 }
 
 .container1, .container2{
