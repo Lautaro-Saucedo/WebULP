@@ -1,0 +1,32 @@
+#cajaformulario,#comentarios{
+    background-color: rgba(25, 25, 25, 0.5);
+    padding: 10px;
+    float: left;
+    margin: 10px;
+    width: 360px;
+}
+
+#comentarios {
+    width: 700px;
+    min-height: 700px;
+    overflow-wrap: break-word;
+}
+
+form{
+    padding: 10px;
+}
+
+form *{
+    margin: 10px;
+}
+
+.nombre {
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.comentario {
+    padding: 15px;
+    letter-spacing: 1px;
+}
