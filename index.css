@@ -43,3 +43,32 @@ mapa p {
     margin-right: auto;
     margin-top: 20px;
 }
+
+.asd{
+    z-index: 9;
+    background-color: rgba(25, 25, 25, 0.9);
+    height: 100%;
+    width: 100%;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.asd *{
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    text-align: center;
+    
+}
+
+.asd h1 {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.asd img {
+    border-radius: 50%;
+}

@@ -10,6 +10,7 @@ var y=0;
 var px=9;
 var py=4;
 var arr;
+var vinitosss=0;
 
 function param(lab2){
     for (i=0;i<5;i++){
@@ -79,29 +80,33 @@ function puma(){
 function mover(a){
     switch(a){
         case 83:{
-            if (arr[y+1][x].innerText == "V"){
+            if (y!=4 && arr[y+1][x].innerText == "V"){
                 vinito();
+                vinitosss++;
             }
             movers();
             break;
         }
         case 65:{
-            if (arr[y][x-1].innerText == "V"){
+            if (x!=0 && arr[y][x-1].innerText == "V"){
                 vinito();
+                vinitosss++;
             }
             movera();
             break;
         }
         case 68:{
-            if (arr[y][x+1].innerText == "V"){
+            if (x!=9 && arr[y][x+1].innerText == "V"){
                 vinito();
+                vinitosss++;
             }
             moverd();
             break;
         }
         case 87:{
-            if (arr[y-1][x].innerText == "V"){
+            if (y!=0 && arr[y-1][x].innerText == "V"){
                 vinito();
+                vinitosss++;
             }
             moverw();
             break;
@@ -134,5 +139,36 @@ function movera(){
     if (x!=0){
         arr[y][x].innerText="#";
         arr[y][--x].innerText="L";
+    }
+}
+
+function autor(){
+    if(vinitosss>=5){
+        var a = document.createElement("div");
+        var b =document.createElement("img");
+        var c =document.createElement("h1");
+        var d = document.createElement("p");
+        var e = document.createElement("p");
+
+        
+        a.classList.add("asd");
+        b.src="img/saucedo.webp";
+        c.innerText="Milanga & Vinito Inc.";
+        d.innerText="Powered by alambre and buenas intenciones.";
+        e.innerText="Presione Escape para volver a esa pagina horrible.";
+
+        document.body.appendChild(a);
+        a.appendChild(b);
+        a.appendChild(c);
+        a.appendChild(d);
+        a.appendChild(e);
+        document.addEventListener('keydown', escape);
+    }
+}
+
+function escape(e){
+    if(e.key == "Escape"){
+        document.body.removeChild(document.body.lastChild);
+        document.removeEventListener('keydown',escape);
     }
 }
