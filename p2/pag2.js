@@ -9,7 +9,7 @@ carr.appendChild(img[0]);
 
 function sig(){
     carr.innerHTML="";
-    if (i == 3){
+    if (i == 5){
         i=0;
     } else {
         i++
@@ -20,7 +20,7 @@ function sig(){
 function ant(){
     carr.innerHTML="";
     if (i == 0){
-        i=3;
+        i=5;
     } else {
         i--
     }
